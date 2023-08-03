@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Victoria Alawi | Light of Twelve | www.lightoftwelve.com",
-  "license": "MIT",
+  "license": "",
   "dependencies": {
     "inquirer": "^8.2.4"
   }

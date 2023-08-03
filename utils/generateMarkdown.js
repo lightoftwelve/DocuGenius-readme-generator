@@ -1,4 +1,6 @@
 function renderLicenseBadge(license) {
+  if (!license) return '';
+
   const licenseBadges = {
     mit: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
     apache: '[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
@@ -46,37 +48,62 @@ function renderLicenseLink(license) {
 }
 
 function renderLicenseSection(license) {
-  if (!license) {
-    return '';
+  if (!license || license === 'None') {
+    return 'No license used.';
   }
 
-  // write return here
+  return `This project is licensed under the [${license}](${renderLicenseLink(license)})`;
 }
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title} &nbsp;&nbsp;&nbsp;<span style="margin-left:20px;">${renderLicenseBadge(data.license)}</span>
 
+## Description
+${data.description}
+
+## Table of Contents 
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.installation}
+
+## Usage 
+${data.usage}
+
+## Contributing 
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+Should you have any inquiries or issues related to this repository, please feel free to open an issue or reach out to me directly at ${data.email}. Additionally, you're invited to explore more of my projects and contributions on GitHub. Simply visit [my GitHub profile](https://github.com/${data.github}/) to learn more.
+
+## License 
+${renderLicenseSection(data.license)} license. 
 `;
 }
 
 module.exports = generateMarkdown;
 
 // Starter Code provided for starts of functions:
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string 
+// Credits: https://github.com/coding-boot-camp/potential-enigma/blob/main/Develop/package.json
+
+// TODO: Create a function that returns a license badge based on which license is passed in. If there is no license, return an empty string 
 // Starter Code: function renderLicenseBadge(license){}
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string 
+// TODO: Create a function that returns the license link. If there is no license, return an empty string 
 // Starter Code: function renderLicenseLink(license){}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string 
+// TODO: Create a function that returns the license section of README. If there is no license, return an empty string 
 // Starter Code: function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 // Starter Code: function generateMarkdown(data) { return `# ${data.title} `; }
 
 // Starter Code: module.exports = generateMarkdown;
-
-// Starter code credits: https://github.com/coding-boot-camp/potential-enigma/blob/main/Develop/package.json
