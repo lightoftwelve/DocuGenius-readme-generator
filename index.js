@@ -87,11 +87,9 @@ init();
 // Credits: https://github.com/coding-boot-camp/potential-enigma/blob/main/Develop/package.json
 
 // TODO: Include packages needed for this application
-//done
 
 // TODO: Create an array of questions for user input
 // const questions = [];
-//done
 
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) { }
