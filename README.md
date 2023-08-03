@@ -17,6 +17,11 @@ Clone the repository and run `npm install` to install the necessary dependencies
 ## Usage 
 Utilizing the DocuGenius Readme Generator is as simple as answering a series of prompts. When you start the application by typing `node index.js` in your command line tool, the Inquirer package guides you through a series of questions. These questions are designed to collect the necessary information to create a comprehensive README file for your project. Simply answer each question as it appears, and once youre done, the application will automatically generate your README. Its that simple!
 
+## Screenshots
+![Showing how to open integrated terminal on Visual Studio](./images/DocuGenius-Readme-Generator-Screenshot-1.png)
+![Showing dependancy install on visual studio](./images/DocuGenius-Readme-Generator-Screenshot-2.png)
+![Showing example of prompts being filled out](./images/DocuGenius-Readme-Generator-Screenshot-3.png)
+
 ## Contributing 
 We are always thrilled to have contributions from the community to help make DocuGenius Readme Generator a more efficient tool. If youd like to contribute to this project, youre welcome to submit a pull request. For significant changes, kindly open an issue first to discuss what you would like to change or add. We appreciate your help!
 
@@ -26,5 +31,11 @@ Currently, no tests are written for the DocuGenius Readme Generator. However, th
 ## Questions
 Should you have any inquiries or issues related to this repository, please feel free to open an issue or reach out to me directly at info@lightoftwelve.com. Additionally, you're invited to explore more of my projects and contributions on GitHub. Simply visit [my GitHub profile](https://github.com/lightoftwelve/) to learn more.
 
+## Credits
+This project was accepted and completed as part of the UofT SCS Coding Boot Camp Online: Fullstack Flex PT course through the University of Toronto. Portions of starter code were given to begin the project which are indicated at the bottom of each individual js file from the following repository: https://github.com/coding-boot-camp/potential-enigma/blob/main/Develop/package.json. Otherwise, this project was independendly developed by myself, Victoria Alawi.
+- Github: [@lightoftwelve](https://github.com/lightoftwelve)
+- LinkedIn: [@Victoria Alawi](https://www.linkedin.com/in/victoria-alawi-872984250/)
+- Website: [www.lightoftwelve.com](http://www.lightoftwelve.com)
+
 ## License 
-This project is licensed under the [mit](https://opensource.org/licenses/MIT) license. 
+The license for this project is currently unavailable.
