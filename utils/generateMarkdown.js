@@ -1,6 +1,7 @@
 function renderLicenseBadge(license) {
-  if (!license) return '';
+  if (!license) return ''; // If no license provided, return an empty string
 
+  // the license names and URLS of their badges
   const licenseBadges = {
     mit: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
     apache: '[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
@@ -20,10 +21,14 @@ function renderLicenseBadge(license) {
     epl1: '[![License: EPL-1.0](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
     mspl: '[![License: Ms-PL](https://img.shields.io/badge/License-Ms--PL-blue.svg)](https://opensource.org/licenses/MS-PL)',
   };
+
+  // Returns the badge for the given license, or an empty string if no such license exists
   return licenseBadges[license] || '';
 }
 
 function renderLicenseLink(license) {
+
+  // the license names and URLS of their descriptions
   const licenseLinks = {
     mit: 'https://opensource.org/licenses/MIT',
     apache: 'https://opensource.org/licenses/Apache-2.0',
@@ -44,17 +49,20 @@ function renderLicenseLink(license) {
     mspl: 'https://opensource.org/licenses/MS-PL',
   };
 
+  // Returns the URL of the given license, or an empty string if no such license exists
   return licenseLinks[license] || '';
 }
 
 function renderLicenseSection(license) {
-  if (!license || license === 'None') {
+  if (!license) {
     return 'No license used.';
   }
 
+  // If a license is provided, state that the project is licensed under that license and link to its details
   return `This project is licensed under the [${license}](${renderLicenseLink(license)})`;
 }
 
+// This function generates the contents of the readme file based on the user's answers
 function generateMarkdown(data) {
   return `# ${data.title} &nbsp;&nbsp;&nbsp;<span style="margin-left:20px;">${renderLicenseBadge(data.license)}</span>
 

@@ -1,7 +1,9 @@
+// Import required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
+// Questions that will be asked to the user in command line
 const questions = [
     {
         type: 'input',
@@ -51,25 +53,29 @@ const questions = [
     },
 ];
 
+// This function writes the readme file
 function writeToFile(fileName, data) {
+    // Call the generateMarkdown function to generate the contents of the readme
     const readmeContent = generateMarkdown(data);
 
+    // Write the readmeContent to a file
     fs.writeFile(fileName, readmeContent, (err) => {
         if (err) {
-            console.error('Error writing to README file:', err);
+            console.error('Error writing to README file:', err); // Logging an error if there are any
         } else {
-            console.log('Your README.md is ready!');
+            console.log('Your README.md is ready!'); // Otherwise, logs that the file was written successfully
         }
     });
 }
 
+// This function initializes the application
 function init() {
-    inquirer.prompt(questions)
+    inquirer.prompt(questions) // Ask the user the questions
         .then((answers) => {
-            writeToFile('README.md', answers);
+            writeToFile('README.md', answers); // Once the user has answered the questions, write the answers to the readme file
         })
         .catch((error) => {
-            console.error('Error in main questions:', error);
+            console.error('Error in main questions:', error); // If there was an error asking the questions, log it
         });
 }
 
