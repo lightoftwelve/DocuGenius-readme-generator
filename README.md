@@ -6,10 +6,10 @@ The DocuGenius Readme Generator is a powerful and user-friendly command-line app
 ## Table of Contents 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [License](#license)
 
 ## Installation
 Clone the repository and run `npm install` to install the necessary dependencies. Then run `node index.js` to start the application.
@@ -26,5 +26,12 @@ Currently, no tests are written for the DocuGenius Readme Generator. However, th
 ## Questions
 Should you have any inquiries or issues related to this repository, please feel free to open an issue or reach out to me directly at info@lightoftwelve.com. Additionally, you're invited to explore more of my projects and contributions on GitHub. Simply visit [my GitHub profile](https://github.com/lightoftwelve/) to learn more.
 
+## Credits
+This project was accepted and completed as part of the UofT SCS Coding Boot Camp Online: Fullstack Flex PT course through the University of Toronto. Portions of starter code were given to begin the project which are indicated at the bottom of each individual js file from the following repository: https://github.com/coding-boot-camp/potential-enigma/blob/main/Develop/package.json. Otherwise, this project was independendly developed by myself, Victoria Alawi.
+
+- Github: [@lightoftwelve](https://github.com/lightoftwelve)
+- LinkedIn: [@Victoria Alawi](https://www.linkedin.com/in/victoria-alawi-872984250/)
+- Website: [www.lightoftwelve.com](http://www.lightoftwelve.com)
+
 ## License 
-This project is licensed under the [mit](https://opensource.org/licenses/MIT) license. 
+The license for this project is currently unavailable.
