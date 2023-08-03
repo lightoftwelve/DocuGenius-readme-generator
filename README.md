@@ -1,4 +1,4 @@
-# DocuGenius Readme Generator &nbsp;&nbsp;&nbsp;<span style="margin-left:20px;">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</span>
+# DocuGenius Readme Generator &nbsp;&nbsp;&nbsp;<span style="margin-left:20px;"></span>
 
 ## Description
 The DocuGenius Readme Generator is a powerful and user-friendly command-line application. It serves one simple but essential purpose - to dynamically generate a professional README.md file from a users input. It does this with the help of the Inquirer package, a comprehensive collection of common interactive command line user interfaces. This application is a must-have tool for developers looking to save time when creating detailed project documentation.
